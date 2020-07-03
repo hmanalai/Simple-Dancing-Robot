@@ -1,0 +1,166 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+	 background-color: #5f93e8;
+}
+
+.head {
+	width: 200px;
+	margin: 0 auto;
+	height: 150px;
+	border-radius: 200px 200px 0 0;
+	margin-bottom: 10px;
+}
+
+.eyes {
+	display: flex;
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s;
+}
+
+.upper_body {
+	width: 300px;
+	height: 150px;
+	display: flex;
+}
+
+.left_arm, .right_arm {
+	width: 40px;
+	height: 125px;
+	border-radius: 100px;
+}
+
+.left_arm {
+	margin-right: 10px;
+}
+
+.left_arm:hover {
+	transform: rotate(30deg);
+}
+
+.right_arm {
+	margin-left: 10px;
+}
+
+.right_arm:hover {
+	transform: rotate(-30deg);
+}
+
+.torso {
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+	transition: all 1s;
+}
+
+.torso:hover {
+	transform: scale(0.9);
+}
+
+.heart {
+	background-color: red;
+	height: 30px;
+	transform: rotate(-45deg);
+	width: 30px;
+	margin-left: 124px;
+	margin-top: 35px;
+	transition: all 1s;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+.heart:hover{
+	transform: scale(1.1);
+}
+
+
+.lower_body {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.left_leg, .right_leg {
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+}
+
+.left_leg {
+	margin-left: 45px;
+}
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg {
+	margin-left: 30px;
+}
+
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.left_eye, .right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.left_eye {
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+
+.right_eye {
+	position: relative;
+	top: 100px;
+	left: 120px;
+}
